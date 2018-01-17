@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cynthia</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+  <!-- header -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <div id="logo"><!--為日後維護方便故選用div非img-->
+          <a href="">
+            <img src="http://via.placeholder.com/80x40" alt="logo" >
+          </a>
+        </div>
+        <ul class="nav">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#service">service</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Homepage Background Image -->
+  <section class="home_bg" id="home">
+    <div class="overlay"></div>
+    <div class="container_table">
+      <div class="container_table_cell">
+        <h2>Hi ~ I am Cynthia!</h2>
+        <div class="social_icons">
+          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Me -->
+  <!-- 因.col_left, .col_right設定為float，所以高度屬於自己的高度，無法包含在about_me下，故在html about_me後面新增名稱clearfix清除浮動，撰寫兩個以上class要用空格區分 -->
+  <section class="about_me clearfix" id="about"> 
+    <div class="container">
+      <h2>about me</h2>
+      <div class="summary">
+        <div class="col_left">
+          <div class="avatar">
+            <img src="http://via.placeholder.com/960x700" alt="avatar">
+          </div>
+        </div>
+
+        <div class="col_right">
+          <div class="persona_info">
+            <h3>hello!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quas enim aspernatur dolor quos quidem, nesciunt quis, sunt quam beatae necessitatibus perferendis quibusdam eaque repellat earum dolore minima, velit officia.</p>
+          </div>
+
+          <div class="skill">
+            <ul>
+              <li>html5</li>
+              <li>ruby on rails</li>
+              <li>my sql</li>
+            </ul>
+          </div>
+          <div class="button_group">
+            <div class="download_cv">
+              <a href="">download CV</a>
+            </div>
+            <div class="hire_me">
+              <a href="">hier me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- My Service -->
+  <section class="my_service clearfix" id="service">
+    <div class="container">
+      <h2>what i offer</h2>
+      <div class="service-items">
+        <div class="service-content">
+          <i class="fa fa-html5" aria-hidden="true"></i>
+          <h3>web design and development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed inventore dolorem, dolores, reiciendis beatae ratione.</p>
+        </div>
+        <div class="service-content">
+          <i class="fa fa-css3" aria-hidden="true"></i>
+          <h3>web design and development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit asperiores autem distinctio dicta modi. Provident.</p>
+        </div>
+        <div class="service-content">
+          <i class="fa fa-camera-retro" aria-hidden="true"></i>
+          <h3>web design and development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut enim, cumque aspernatur aliquam maxime rem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Resume -->
+  <section class="resume">
+    <div class="container">
+      <h2>resume</h2>
+      <div class="col-horizontal clearfix">
+        <!-- 區塊無法滑動問題，要設定 clearfix 來清除浮動，若在 <section></section> 標籤加上clearfix，但item-horizontal的水平線位置不對。因為 clearfix 要設定浮動元素的父層，父層是包覆該元素的那一層。單元的範例我們設定 col-item 區塊浮動，所以要在 2 個col-horizontal新增 clearfix -->
+        <h3 class="resume-subtitle">education:</h3>
+        <div class="col-items">
+          <p class="experience-year">20xx - 20xx</p>
+          <div class="resume-detail">
+            <h4>computer science</h4>
+            <h6>google</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consequuntur.</p>
+          </div>
+        </div>
+      
+        <div class="col-items">
+          <p class="experience-year">20xx - 20xx</p>
+          <div class="resume-detail">
+            <h4>computer science</h4>
+            <h6>google</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consequuntur.</p>
+          </div>
+        </div>
+      </div>
+            <div class="col-horizontal clearfix">
+        <h3 class="resume-subtitle">experience:</h3>
+        <div class="col-items">
+          <p class="experience-year">20xx - 20xx</p>
+          <div class="resume-detail">
+            <h4>computer science</h4>
+            <h6>google</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consequuntur.</p>
+          </div>
+        </div>
+      
+        <div class="col-items">
+          <p class="experience-year">20xx - 20xx</p>
+          <div class="resume-detail">
+            <h4>computer science</h4>
+            <h6>google</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consequuntur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Quote -->
+  <section class="quotes">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="quote-inner">
+        <h3>Let's work together!</h3>
+        <p>I am available for freelance projects</p>
+        <a href="#">get quotes</a>
+      </div>
+    </div>
+  </section>
+  <!-- Latest Work -->
+  <section class="works" id="portfolio">
+    <div class="container">
+      <h2>latest work</h2>
+      <div class="work-items clearfix">
+        <div class="col-work">
+          <a href="http://via.placeholder.com/600x600">
+            <img src="http://via.placeholder.com/600x600" alt="work-1.jpg">
+          </a>
+        </div>
+
+        <div class="col-work">
+          <a href="http://via.placeholder.com/600x600">
+            <img src="http://via.placeholder.com/600x600" alt="work-2.jpg">
+          </a>
+        </div>
+
+        <div class="col-work">
+          <a href="http://via.placeholder.com/600x600">
+            <img src="http://via.placeholder.com/600x600" alt="work-3.jpg">
+          </a>
+        </div>
+
+        <div class="col-work">
+          <a href="http://via.placeholder.com/600x600">
+            <img src="http://via.placeholder.com/600x600" alt="work-4.jpg">
+          </a>
+        </div>
+
+        <div class="col-work">
+          <a href="http://via.placeholder.com/600x600">
+            <img src="http://via.placeholder.com/600x600" alt="work-5.jpg">
+          </a>
+        </div>
+
+        <div class="col-work">
+          <a href="http://via.placeholder.com/600x600">
+            <img src="http://via.placeholder.com/600x600" alt="work-6.jpg">
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>get in touch</h2>
+      <div class="contact-form">
+        <form action="">
+          <div class="form-input">
+            <input type="text" name="name" class="form-style" placeholder="input your name" required>
+          </div>
+          <div class="form-input">
+            <input type="email" name="email" class="form-style" placeholder="enter your email" required>
+          </div>
+          <div class="form-input">
+            <textarea name="textarea" id="message" cols="30" rows="10" placeholder="write message" required></textarea>
+          </div>
+          <div class="form-submit">
+            <input type="submit" name="submit" value="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2018 YCC</p>
+        <div class="footer-social-icon">
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
